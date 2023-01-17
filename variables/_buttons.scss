@@ -1,0 +1,28 @@
+.btn {
+    width: auto;
+    padding: 8px 20px;
+    margin: 8px;
+    background-color: transparent;
+    cursor: pointer;
+    border:none;
+}
+
+.btn-primary {
+    @extend .btn;
+    color: $color-white;
+    background-color: $color-primary;
+    &:hover {
+        color: $color-primary;
+        background-color: $color-white;
+    }
+}
+
+.btn-secondary {
+    @extend .btn;
+    color: $color-white;
+    background-color:$color-dark;
+    &:hover {
+        color: $color-dark;
+        background-color: $color-white;
+    }
+}
